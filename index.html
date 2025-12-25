@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JC RESTAURANT - Nhà Hàng Đồ Âu Cao Cấp Hà Nội</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/48/restaurant-.png">
+    
+    <!-- Meta tags -->
+    <meta name="description" content="JC RESTAURANT - Nhà hàng đồ Âu cao cấp tại Hà Nội. Trải nghiệm ẩm thực tinh tế, không gian sang trọng và dịch vụ đẳng cấp.">
+    <meta name="keywords" content="nhà hàng đồ Âu, ẩm thực Âu, Hà Nội, JC RESTAURANT, fine dining, đặt bàn, menu cao cấp">
+    <meta name="author" content="JC RESTAURANT">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="JC RESTAURANT - Nhà Hàng Đồ Âu Cao Cấp">
+    <meta property="og:description" content="Trải nghiệm ẩm thực Âu đẳng cấp tại Hà Nội">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80">
+    <meta property="og:url" content="https://jcrestaurant.com">
+    <meta property="og:type" content="website">
+    
+    <meta charset="UTF-8">
+    <title>JCTOWN Chatbot AI</title>
+    <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <span class="logo-icon"><i class="fas fa-crown"></i></span>
+                <h1 class="logo-text">JC RESTAURANT</h1>
+            </div>
+            
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Trang chủ</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">Về chúng tôi</a></li>
+                    <li class="nav-item"><a href="#menu" class="nav-link">Thực đơn</a></li>
+                    <li class="nav-item"><a href="#seasonal" class="nav-link">Món đặc biệt</a></li>
+                    <li class="nav-item"><a href="#booking" class="nav-link">Đặt bàn</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Liên hệ</a></li>
+                </ul>
+            </nav>
+            
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Gallery -->
+    <section class="hero-section" id="home">
+        <div class="hero-gallery">
+            <div class="gallery-track">
+                <div class="gallery-slide slide-1"></div>
+                <div class="gallery-slide slide-2"></div>
+                <div class="gallery-slide slide-3"></div>
+                <div class="gallery-slide slide-4"></div>
+            </div>
+            
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <h2 class="hero-title">JC RESTAURANT</h2>
+                    <p class="hero-subtitle">Ẩm Thực Âu - Đẳng Cấp & Tinh Tế</p>
+                    <p class="hero-description">Trải nghiệm không gian sang trọng và hương vị tinh hoa ẩm thực châu Âu ngay tại trung tâm Hà Nội</p>
+                    <div class="hero-buttons">
+                        <a href="#menu" class="btn btn-primary">Xem Thực Đơn</a>
+                        <a href="#booking" class="btn btn-secondary">Đặt Bàn Ngay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="gallery-indicators">
+            <span class="indicator active" data-slide="0"></span>
+            <span class="indicator" data-slide="1"></span>
+            <span class="indicator" data-slide="2"></span>
+            <span class="indicator" data-slide="3"></span>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Về JC RESTAURANT</h2>
+                <p class="section-subtitle">Hành trình ẩm thực đẳng cấp</p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 class="about-heading">Chào mừng đến với JC RESTAURANT</h3>
+                    <p>Thành lập từ năm 2018, JC RESTAURANT tự hào là một trong những nhà hàng đồ Âu hàng đầu tại Hà Nội. Chúng tôi mang đến trải nghiệm ẩm thực tinh tế với sự kết hợp hoàn hảo giữa nguyên liệu cao cấp nhập khẩu từ châu Âu và kỹ thuật chế biến hiện đại.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-star feature-icon"></i>
+                            <h4 class="feature-title">Nguyên liệu cao cấp</h4>
+                            <p class="feature-desc">Nhập khẩu trực tiếp từ châu Âu</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-user-tie feature-icon"></i>
+                            <h4 class="feature-title">Đầu bếp hàng đầu</h4>
+                            <p class="feature-desc">Với hơn 15 năm kinh nghiệm</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-wine-glass-alt feature-icon"></i>
+                            <h4 class="feature-title">Không gian sang trọng</h4>
+                            <p class="feature-desc">Thiết kế tân cổ điển châu Âu</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">5000+</span>
+                            <span class="stat-label">Khách hàng hài lòng</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Món ăn đặc sắc</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5</span>
+                            <span class="stat-label">Năm kinh nghiệm</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Không gian nhà hàng JC RESTAURANT" class="about-img">
+                    <div class="image-overlay">
+                        <div class="overlay-content">
+                            <i class="fas fa-clock overlay-icon"></i>
+                            <h4 class="overlay-title">Giờ mở cửa</h4>
+                            <p class="overlay-text">10:00 - 22:00</p>
+                            <p class="overlay-text">Hàng ngày</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu by Pax Section -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Thực Đơn Theo Số Người</h2>
+                <p class="section-subtitle">Chọn menu phù hợp với bữa tiệc của bạn</p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="pax-buttons-container">
+                <div class="pax-buttons">
+                    <button class="pax-btn active" data-pax="2">
+                        <span class="pax-number">2 Người</span>
+                        <span class="pax-price">2.500.000 VNĐ</span>
+                        <span class="pax-desc">Lãng mạn</span>
+                    </button>
+                    <button class="pax-btn" data-pax="4">
+                        <span class="pax-number">4 Người</span>
+                        <span class="pax-price">4.800.000 VNĐ</span>
+                        <span class="pax-desc">Gia đình</span>
+                    </button>
+                    <button class="pax-btn" data-pax="6">
+                        <span class="pax-number">6 Người</span>
+                        <span class="pax-price">6.900.000 VNĐ</span>
+                        <span class="pax-desc">Bạn bè</span>
+                    </button>
+                    <button class="pax-btn" data-pax="8">
+                        <span class="pax-number">8 Người</span>
+                        <span class="pax-price">8.800.000 VNĐ</span>
+                        <span class="pax-desc">Tiệc lớn</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="menu-display-container">
+                <!-- Menu 2 Người -->
+                <div id="menu-2" class="menu-display active">
+                    <div class="menu-image-container">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Menu 2 Người" class="menu-image">
+                        <div class="image-overlay-blur"></div>
+                    </div>
+                    <div class="menu-overlay">
+                        <h3 class="menu-overlay-title">Menu 2 Người - Lãng Mạn</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Súp Kem Hải Sản</h4>
+                                    <span class="item-price">320.000 VNĐ</span>
+                                </div>
+                                <p class="item-desc">Kem tươi, tôm, mực, nghệ tây</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Bò Filet Mignon</h4>
+                                    <span class="item-price">850.000 VNĐ</span>
+                                </div>
+                                <p class="item-desc">Bò Úc, sốt rượu vang đỏ, khoai tây nghiền truffle</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Cá Hồi Sốt Chanh Dây</h4>
+                                    <span class="item-price">720.000 VNĐ</span>
+                                </div>
+                                <p class="item-desc">Cá hồi Nauy, sốt chanh dây, măng tây xanh</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Tiramisu Cao Cấp</h4>
+                                    <span class="item-price">280.000 VNĐ</span>
+                                </div>
+                                <p class="item-desc">Bánh tiramisu Ý, cà phê arabica, cacao nguyên chất</p>
+                            </div>
+                        </div>
+                        <div class="menu-total">
+                            <span class="total-label">Tổng cộng:</span>
+                            <span class="total-price">2.500.000 VNĐ</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Menu 4 Người -->
+                <div id="menu-4" class="menu-display">
+                    <div class="menu-image-container">
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Menu 4 Người" class="menu-image">
+                        <div class="image-overlay-blur"></div>
+                    </div>
+                    <div class="menu-overlay">
+                        <h3 class="menu-overlay-title">Menu 4 Người - Gia Đình</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Súp Bí Đỏ Kem</h4>
+                                    <span class="item-price">280.000 VNĐ</span>
+                                </div>
+                                <p class="item-desc">Bí đỏ hữu cơ, kem tươi, hạt bí</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Bò Wellington</h4>
+                                    <span class="item-price">1.200.000 VNĐ</span>
+                                </div>
+                                <p class="item-desc">Thăn bò bọc pate gan, nấm, bánh pastry</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Gà Nướng Lavender</h4>
+                                    <span class="item-price">850.000 VNĐ</span>
+                                </div>
+                                <p class="item-desc">Gà ta, sốt lavender, rau củ nướng</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Salad Cá Hồi Xông Khói</h4>
+                                    <span class="item-price">450.000 VNĐ</span>
+                                </div>
+                                <p class="item-desc">Cá hồi xông khói, xà lách, sốt mật ong</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Set Tráng Miệng 4 Món</h4>
+                                    <span class="item-price">520.000 VNĐ</span>
+                                </div>
+                                <p class="item-desc">Macaron, chocolate, bánh flan, trái cây</p>
+                            </div>
+                        </div>
+                        <div class="menu-total">
+                            <span class="total-label">Tổng cộng:</span>
+                            <span class="total-price">4.800.000 VNĐ</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Menu 6 Người -->
+                <div id="menu-6" class="menu-display">
+                    <div class="menu-image-container">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Menu 6 Người" class="menu-image">
+                        <div class="image-overlay-blur"></div>
+                    </div>
+                    <div class="menu-overlay">
+                        <h3 class="menu-overlay-title">Menu 6 Người - Bạn Bè</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Súp Hành Pháp</h4>
+                                    <span class="item-price">350.000 VNĐ</span>
+                                </div>
+                                <p class="item-desc">Hành tây caramel, nước dùng bò, phô mai gruyere</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Bò Ribeye Steak</h4>
+                                    <span class="item-price">1.800.000 VNĐ</span>
+                                </div>
+                                <p class="item-desc">Bò Mỹ, sốt tiêu đen, khoai tây dauphinoise</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Hải Sản Tổng Hợp</h4>
+                                    <span class="item-price">1.500.000 VNĐ</span>
+                                </div>
+                                <p class="item-desc">Tôm hùm, sò điệp, mực, sốt beurre blanc</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Pasta Hải Sản Ý</h4>
+                                    <span class="item-price">680.000 VNĐ</span>
+                                </div>
+                                <p class="item-desc">Mì Ý, tôm, mực, nghêu, sốt cà chua</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Salad Caesar Đặc Biệt</h4>
+                                    <span class="item-price">420.000 VNĐ</span>
+                                </div>
+                                <p class="item-desc">Xà lách romaine, gà nướng, sốt caesar, phô mai parmesan</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Platter Tráng Miệng</h4>
+                                    <span class="item-price">750.000 VNĐ</span>
+                                </div>
+                                <p class="item-desc">6 món tráng miệng đặc sắc</p>
+                            </div>
+                        </div>
+                        <div class="menu-total">
+                            <span class="total-label">Tổng cộng:</span>
+                            <span class="total-price">6.900.000 VNĐ</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Menu 8 Người -->
+                <div id="menu-8" class="menu-display">
+                    <div class="menu-image-container">
+                        <img src="https://images.unsplash.com/photo-1578474846511-04ba529f0b88?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Menu 8 Người" class="menu-image">
+                        <div class="image-overlay-blur"></div>
+                    </div>
+                    <div class="menu-overlay">
+                        <h3 class="menu-overlay-title">Menu 8 Người - Tiệc Lớn</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Set Khai Vị 8 Món</h4>
+                                    <span class="item-price">1.200.000 VNĐ</span>
+                                </div>
+                                <p class="item-desc">Các món khai vị đặc sắc châu Âu</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Bò Tomahawk</h4>
+                                    <span class="item-price">2.500.000 VNĐ</span>
+                                </div>
+                                <p class="item-desc">Bò Úc 1.2kg, sốt rượu vang, rau củ nướng</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Hải Sản Đại Dương</h4>
+                                    <span class="item-price">2.200.000 VNĐ</span>
+                                </div>
+                                <p class="item-desc">Tôm hùm Alaska, sò điệp, cá hồi, mực ống</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Pasta Ý Truyền Thống</h4>
+                                    <span class="item-price">850.000 VNĐ</span>
+                                </div>
+                                <p class="item-desc">Pasta tự làm, sốt bolognese, phô mai parmesan</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Set Salad Cao Cấp</h4>
+                                    <span class="item-price">650.000 VNĐ</span>
+                                </div>
+                                <p class="item-desc">3 loại salad đặc biệt</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Set Tráng Miệng Thịnh Soạn</h4>
+                                    <span class="item-price">950.000 VNĐ</span>
+                                </div>
+                                <p class="item-desc">8 món tráng miệng tinh tế</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Set Đồ Uống Cao Cấp</h4>
+                                    <span class="item-price">1.200.000 VNĐ</span>
+                                </div>
+                                <p class="item-desc">Rượu vang, cocktail, nước ép trái cây</p>
+                            </div>
+                        </div>
+                        <div class="menu-total">
+                            <span class="total-label">Tổng cộng:</span>
+                            <span class="total-price">8.800.000 VNĐ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seasonal & Best Service Dishes -->
+    <section class="seasonal-section" id="seasonal">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Món Đặc Biệt & Best Seller</h2>
+                <p class="section-subtitle">Những tinh hoa ẩm thực theo mùa</p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="dish-tabs">
+                <button class="dish-tab active" data-tab="seasonal">Món Theo Mùa</button>
+                <button class="dish-tab" data-tab="best">Best Seller</button>
+                <button class="dish-tab" data-tab="chef">Món Đầu Bếp Ưa Thích</button>
+            </div>
+            
+            <div class="dish-tab-content">
+                <!-- Seasonal Dishes -->
+                <div class="dish-grid active" id="seasonal-dishes">
+                    <div class="dish-card">
+                        <div class="dish-badge seasonal">MÙA HÈ</div>
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Salad Hè Tươi Mát" class="dish-image">
+                        <div class="dish-info">
+                            <h4 class="dish-name">Salad Hè Tươi Mát</h4>
+                            <p class="dish-desc">Xà lách tươi, dâu tây, phô mai dê, sốt chanh mật ong</p>
+                            <div class="dish-footer">
+                                <span class="dish-price">320.000 VNĐ</span>
+                                <button class="dish-order-btn">Thêm vào đơn</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="dish-card">
+                        <div class="dish-badge seasonal">ĐẶC BIỆT</div>
+                        <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cá Hồi Sốt Xoài" class="dish-image">
+                        <div class="dish-info">
+                            <h4 class="dish-name">Cá Hồi Sốt Xoài</h4>
+                            <p class="dish-desc">Cá hồi Nauy, sốt xoài nhiệt đới, rau củ nướng</p>
+                            <div class="dish-footer">
+                                <span class="dish-price">650.000 VNĐ</span>
+                                <button class="dish-order-btn">Thêm vào đơn</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="dish-card">
+                        <div class="dish-badge seasonal">MỚI</div>
+                        <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bít Tết Wagyu" class="dish-image">
+                        <div class="dish-info">
+                            <h4 class="dish-name">Bít Tết Wagyu A5</h4>
+                            <p class="dish-desc">Thịt bò Wagyu Nhật Bản, sốt rượu vang đỏ, khoai tây truffle</p>
+                            <div class="dish-footer">
+                                <span class="dish-price">2.500.000 VNĐ</span>
+                                <button class="dish-order-btn">Thêm vào đơn</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Best Seller Dishes -->
+                <div class="dish-grid" id="best-dishes">
+                    <div class="dish-card">
+                        <div class="dish-badge best">BEST SELLER</div>
+                        <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bò Wellington" class="dish-image">
+                        <div class="dish-info">
+                            <h4 class="dish-name">Bò Wellington</h4>
+                            <p class="dish-desc">Thăn bò bọc pate gan, nấm, bánh pastry vàng giòn</p>
+                            <div class="dish-footer">
+                                <span class="dish-price">1.200.000 VNĐ</span>
+                                <button class="dish-order-btn">Thêm vào đơn</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="dish-card">
+                        <div class="dish-badge best">PHỔ BIẾN</div>
+                        <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cá Hồi Sốt Chanh" class="dish-image">
+                        <div class="dish-info">
+                            <h4 class="dish-name">Cá Hồi Sốt Chanh</h4>
+                            <p class="dish-desc">Cá hồi Nauy áp chảo, sốt chanh dây, măng tây</p>
+                            <div class="dish-footer">
+                                <span class="dish-price">720.000 VNĐ</span>
+                                <button class="dish-order-btn">Thêm vào đơn</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="dish-card">
+                        <div class="dish-badge best">YÊU THÍCH</div>
+                        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pasta Hải Sản" class="dish-image">
+                        <div class="dish-info">
+                            <h4 class="dish-name">Pasta Hải Sản Ý</h4>
+                            <p class="dish-desc">Mì Ý tự làm, tôm, mực, nghêu, sốt cà chua tươi</p>
+                            <div class="dish-footer">
+                                <span class="dish-price">680.000 VNĐ</span>
+                                <button class="dish-order-btn">Thêm vào đơn</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Chef's Recommendation -->
+                <div class="dish-grid" id="chef-dishes">
+                    <div class="dish-card">
+                        <div class="dish-badge chef">MÓN ĐẦU BẾP ƯA THÍCH</div>
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pizza Truffle" class="dish-image">
+                        <div class="dish-info">
+                            <h4 class="dish-name">Pizza Truffle Đen</h4>
+                            <p class="dish-desc">Pizza với phô mai mozzarella, nấm truffle đen, thịt xông khói</p>
+                            <div class="dish-footer">
+                                <span class="dish-price">850.000 VNĐ</span>
+                                <button class="dish-order-btn">Thêm vào đơn</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="dish-card">
+                        <div class="dish-badge chef">ĐẶC SẢN</div>
+                        <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Súp Hành Pháp" class="dish-image">
+                        <div class="dish-info">
+                            <h4 class="dish-name">Súp Hành Pháp</h4>
+                            <p class="dish-desc">Súp hành tây kiểu Pháp với phô mai gruyere nướng</p>
+                            <div class="dish-footer">
+                                <span class="dish-price">350.000 VNĐ</span>
+                                <button class="dish-order-btn">Thêm vào đơn</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="dish-card">
+                        <div class="dish-badge chef">SÁNG TẠO</div>
+                        <img src="https://riversidepalace.vn/newsmultidata/yummybestdesserts-main-984.jpg" alt="Dessert Platter" class="dish-image">
+                        <div class="dish-info">
+                            <h4 class="dish-name">Dessert Platter</h4>
+                            <p class="dish-desc">5 món tráng miệng tinh tế: macaron, tiramisu, chocolate lava...</p>
+                            <div class="dish-footer">
+                                <span class="dish-price">650.000 VNĐ</span>
+                                <button class="dish-order-btn">Thêm vào đơn</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking-section" id="booking">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Đặt Bàn & Setup Tiệc</h2>
+                <p class="section-subtitle">Chúng tôi sẵn sàng phục vụ mọi yêu cầu của bạn</p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="booking-container">
+                <div class="booking-info">
+                    <h3 class="booking-title">Tại sao chọn JC RESTAURANT?</h3>
+                    <ul class="booking-features">
+                        <li class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <span class="feature-text">Không gian sang trọng, riêng tư</span>
+                        </li>
+                        <li class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <span class="feature-text">Thực đơn tùy chỉnh theo yêu cầu</span>
+                        </li>
+                        <li class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <span class="feature-text">Setup trang trí theo chủ đề</span>
+                        </li>
+                        <li class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <span class="feature-text">Dịch vụ chuyên nghiệp, tận tâm</span>
+                        </li>
+                        <li class="feature-item">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                            <span class="feature-text">Âm nhạc theo yêu cầu</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="booking-types">
+                        <h4 class="types-title">Các loại tiệc phục vụ:</h4>
+                        <div class="types-grid">
+                            <div class="type-item">
+                                <i class="fas fa-birthday-cake type-icon"></i>
+                                <span class="type-name">Sinh nhật</span>
+                            </div>
+                            <div class="type-item">
+                                <i class="fas fa-heart type-icon"></i>
+                                <span class="type-name">Kỷ niệm</span>
+                            </div>
+                            <div class="type-item">
+                                <i class="fas fa-briefcase type-icon"></i>
+                                <span class="type-name">Doanh nghiệp</span>
+                            </div>
+                            <div class="type-item">
+                                <i class="fas fa-glass-cheers type-icon"></i>
+                                <span class="type-name">Gặp mặt</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="booking-contact">
+                        <h4 class="contact-title">Liên hệ đặt tiệc:</h4>
+                        <p class="contact-info"><i class="fas fa-phone"></i> 0987 724 041</p>
+                        <p class="contact-info"><i class="fas fa-envelope"></i> jcrestaurant@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="booking-form-container">
+                    <form class="booking-form" id="booking-form">
+                        <h3 class="form-title">Đặt bàn trực tuyến</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Họ và tên *</label>
+                                <input type="text" id="name" name="name" required placeholder="Nguyễn Văn A">
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Số điện thoại *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="0987 724 041">
+                                <div class="error-message"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="example@gmail.com">
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="guests">Số người *</label>
+                                <select id="guests" name="guests" required>
+                                    <option value="" disabled selected>Chọn số người</option>
+                                    <option value="1">1 người</option>
+                                    <option value="2">2 người</option>
+                                    <option value="3">3 người</option>
+                                    <option value="4">4 người</option>
+                                    <option value="5">5 người</option>
+                                    <option value="6">6 người</option>
+                                    <option value="7">7 người</option>
+                                    <option value="8">8 người</option>
+                                    <option value="9">9 người trở lên</option>
+                                </select>
+                                <div class="error-message"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Ngày đặt *</label>
+                                <input type="date" id="date" name="date" required>
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Giờ đặt *</label>
+                                <select id="time" name="time" required>
+                                    <option value="" disabled selected>Chọn giờ</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="17:00">17:00</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="21:00">21:00</option>
+                                </select>
+                                <div class="error-message"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="occasion">Dịp đặc biệt</label>
+                            <select id="occasion" name="occasion">
+                                <option value="" selected>Không có dịp đặc biệt</option>
+                                <option value="birthday">Sinh nhật</option>
+                                <option value="anniversary">Kỷ niệm</option>
+                                <option value="business">Doanh nghiệp</option>
+                                <option value="date">Hẹn hò</option>
+                                <option value="family">Gia đình</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="requests">Yêu cầu đặc biệt</label>
+                            <textarea id="requests" name="requests" rows="4" placeholder="Ví dụ: Bàn gần cửa sổ, không có đậu phộng, trang trí sinh nhật..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <label for="terms">Tôi đồng ý với điều khoản và chính sách của nhà hàng</label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-calendar-check"></i>
+                            ĐẶT BÀN NGAY
+                        </button>
+                        
+                        <div class="form-note">
+                            <p><i class="fas fa-info-circle"></i> Chúng tôi sẽ liên hệ xác nhận trong vòng 2 giờ</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Liên Hệ Với Chúng Tôi</h2>
+                <p class="section-subtitle">Chúng tôi luôn sẵn sàng phục vụ bạn</p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 class="contact-title">Địa chỉ</h4>
+                            <p class="contact-text">143 Nguyễn Chính, Hoàng Mai, Hà Nội</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 class="contact-title">Điện thoại</h4>
+                            <p class="contact-text">0987 724 041</p>
+                            <p class="contact-note">(Hotline: 8:00 - 22:00 hàng ngày)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 class="contact-title">Email</h4>
+                            <p class="contact-text">jcrestaurant@gmail.com</p>
+                            <p class="contact-note">(Phản hồi trong 24h)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 class="contact-title">Giờ mở cửa</h4>
+                            <p class="contact-text">Thứ 2 - Chủ nhật: 10:00 - 22:00</p>
+                            <p class="contact-note">(Mở cửa cả ngày lễ)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-media">
+                        <h4 class="social-title">Kết nối với chúng tôi</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-map">
+                    <div class="map-container">
+                        <!-- Simplified map representation -->
+                        <div class="map-placeholder">
+                            <div class="map-overlay">
+                                <h4 class="map-title">JC RESTAURANT</h4>
+                                <p class="map-address">143 Nguyễn Chính, Hoàng Mai, Hà Nội</p>
+                                <div class="map-features">
+                                    <p><i class="fas fa-car"></i> Có chỗ đỗ xe</p>
+                                    <p><i class="fas fa-subway"></i> Gần trạm xe buýt</p>
+                                    <p><i class="fas fa-wheelchair"></i> Thân thiện người khuyết tật</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-crown footer-logo-icon"></i>
+                        <h3 class="footer-logo-text">JC RESTAURANT</h3>
+                    </div>
+                    <p class="footer-description">JC RESTAURANT - Nơi hội tụ tinh hoa ẩm thực châu Âu, mang đến trải nghiệm ẩm thực đẳng cấp tại trái tim Hà Nội.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Liên kết nhanh</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Trang chủ</a></li>
+                        <li><a href="#about">Về chúng tôi</a></li>
+                        <li><a href="#menu">Thực đơn</a></li>
+                        <li><a href="#seasonal">Món đặc biệt</a></li>
+                        <li><a href="#booking">Đặt bàn</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Chính sách</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Điều khoản sử dụng</a></li>
+                        <li><a href="#">Chính sách đặt bàn</a></li>
+                        <li><a href="#">Chính sách hủy đặt</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Đăng ký nhận tin</h4>
+                    <p class="footer-text">Nhận thông tin khuyến mãi và sự kiện đặc biệt</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email của bạn" class="newsletter-input">
+                        <button type="submit" class="newsletter-btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2024 JC RESTAURANT. Tất cả các quyền được bảo lưu.</p>
+                </div>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa payment-icon"></i>
+                    <i class="fab fa-cc-mastercard payment-icon"></i>
+                    <i class="fab fa-cc-jcb payment-icon"></i>
+                    <i class="fas fa-money-bill-wave payment-icon"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot Widget -->
+    <div class="chatbot-container" id="chatbot-container">
+        <div class="chatbot-window" id="chatbot-window">
+            <div class="chat-header">
+                <div class="chat-title">
+                    <i class="fas fa-robot chat-icon"></i>
+                    <h3>Trợ lý AI JC Restaurant</h3>
+                </div>
+                <button class="chat-close-btn" id="chat-close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="chat-messages" id="chat-messages">
+                <!-- Messages will be inserted here by JavaScript -->
+            </div>
+            
+            <div class="chat-input-area">
+                <input type="text" class="chat-input" id="chat-input" placeholder="Nhập câu hỏi của bạn...">
+                <button class="chat-send-btn" id="chat-send-btn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+            
+            <div class="chat-suggestions">
+                <p class="suggestion-title">Câu hỏi thường gặp:</p>
+                <div class="suggestion-buttons">
+                    <button class="suggestion-btn" data-question="Giờ mở cửa của nhà hàng?">Giờ mở cửa</button>
+                    <button class="suggestion-btn" data-question="Có menu chay không?">Menu chay</button>
+                    <button class="suggestion-btn" data-question="Cách đặt bàn?">Đặt bàn</button>
+                    <button class="suggestion-btn" data-question="Địa chỉ nhà hàng?">Địa chỉ</button>
+                </div>
+            </div>
+        </div>
+        
+        <button class="chatbot-btn" id="chatbot-btn">
+            <i class="fas fa-comment-dots"></i>
+            <span class="notification-dot"></span>
+        </button>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript Files -->
+    <script src="script.js"></script>
+
+
+
+
+    <script src="chatbot.js"></script>
+<script>
+// Auto debug khi tải trang
+window.addEventListener('load', function() {
+    console.log('=== JC RESTAURANT DEBUG ===');
+    
+    // Kiểm tra chatbot elements
+    console.log('Chatbot button:', document.getElementById('chatbot-btn') ? '✓ Tìm thấy' : '✗ Không tìm thấy');
+    console.log('Chat window:', document.getElementById('chatbot-window') ? '✓ Tìm thấy' : '✗ Không tìm thấy');
+    console.log('Chat input:', document.getElementById('chat-input') ? '✓ Tìm thấy' : '✗ Không tìm thấy');
+    
+    // Test API
+    testGeminiAPI();
+});
+
+async function testGeminiAPI() {
+    console.log('\n=== TEST GEMINI API ===');
+    
+    const apiKey = 'AIzaSyAyHUhtIXXbg3XSR7Rs2_n8v9waFiqf774';
+    const testUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=' + apiKey;
+    
+    console.log('Testing URL:', testUrl.substring(0, 100) + '...');
+    
+    try {
+        const response = await fetch(testUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                contents: [{
+                    parts: [{ text: "Xin chào, đây là test" }]
+                }],
+                generationConfig: {
+                    maxOutputTokens: 100
+                }
+            })
+        });
+        
+        console.log('Response status:', response.status, response.statusText);
+        
+        if (response.ok) {
+            const data = await response.json();
+            console.log('API Success! Response:', data);
+            
+            if (data.candidates && data.candidates[0]) {
+                console.log('✓ API hoạt động tốt!');
+                console.log('Bot trả lời:', data.candidates[0].content.parts[0].text);
+            }
+        } else {
+            const errorText = await response.text();
+            console.error('API Error:', errorText);
+        }
+        
+    } catch (error) {
+        console.error('Fetch error:', error);
+        console.log('⚠ CORS hoặc network error. Cần proxy.');
+    }
+}
+</script>
+</body>
+</html>
